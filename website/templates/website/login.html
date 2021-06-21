@@ -1,0 +1,30 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block main %}
+    <br>
+    <br>
+    <form action="{% url 'website:login' %}" method="post" style="align-items: center; text-align: center">
+        {% csrf_token %}
+
+        {% if message %}
+            <div> {{ message }} </div>
+            <br>
+        {% endif %}
+
+        <h1 style="font-family: Teko, sans-serif;">Welcome</h1>
+        <label for="user">Username</label>
+        <input type="text" placeholder="Insira o username" id="user" name="username">
+        <br>
+        <label for="pw">Password:</label>
+        <input type="password" placeholder="Insira a Password" id="pw" name="password">
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success">Login</button>
+
+    </form>
+    <br>
+
+
+
+{% endblock %}

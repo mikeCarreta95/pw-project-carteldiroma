@@ -1,0 +1,64 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block main %}
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-12 col-md-6 text-center text-md-left">
+                    <div class="section-heading mb-3">
+                        <h4>Discover</h4>
+                        <h1 class="display-4">Our Story</h1>
+                    </div>
+                    <p>O Cartel di Roma nasceu de uma grande amizade, após muitos anos juntas na cozinha surgiu
+                        a ideia de partilhar com os mais gulosos a nossa arte. Decidimos assim expandir os
+                        nossos horizontes e aventurarmo-nos no mundo dos edibles, que tem vindo a ganhar
+                        notoriedade no mundo inteiro. Posto isto quisemos juntar o melhor dos dois; a deliciosa
+                        beleza e elegância dos nossos produtos com uma viagem sensorial e
+                        completamente indescritível.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid" src="{% static 'website/images/about-img.jpg' %}">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-12 col-md-6 text-center text-md-left">
+                    <div class="section-heading mb-3">
+                        <h4>Discover</h4>
+                        <h1 class="display-4">Mary's History</h1>
+                    </div>
+                    <p style="text-align: justify">Nascida em Bruxelas, a Chef Mariana Estevens viveu a sua juventude
+                        rodeada de
+                        multiculturalidade, onde desde pequena tentou provar e aumentar o seu conhecimento
+                        em relação aos sabores da pastelaria belga com bases de pastelaria francesa.
+                        <br>
+                    <hr>
+                    Após um percurso académico que não a deixou satisfeita com as suas escolhas, decidiu
+                    integraro curso de Gestão e Produção de Pastelaria na Escola de Hotelaria e Turismo de
+                    Lisboa, onde finalmente encontrou a sua vocação.
+                    <br>
+                    Após o curso, frequentou grandes sítios de renome,
+                    incluindo o Sublime-Comporta, onde foi desenvolvendo conhecimentos,
+                    técnicas e receitas.
+                    <br>
+                    <hr>
+                    O seu grande sonho sempre foi juntar dois mundos, o da Pastelaria
+                    e do THC, começando assim a aventura “Cartel di Roma”.
+                    </p>
+                    <a class="btn mt-4 mb-5 mb-md-0" href="{% url 'website:home' %}">Go Back</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid" src="{% static 'website/images/chef-1.png' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

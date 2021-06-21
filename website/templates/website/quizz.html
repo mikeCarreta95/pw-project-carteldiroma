@@ -1,0 +1,49 @@
+{% extends 'website/base.html' %}
+{% block main %}
+    <form action="" method="POST" autocomplete="on" style="text-align: center">
+        <fieldset id="quizz">
+            <h1 style="font-family: 'Niconne', cursive; color: #c69963" class="display-4">Quizz</h1>
+            <br><br>
+            <label for="q1"></label><b>Qual o doce que mais chamou à atenção?</b></label>
+            <br><br>
+            <input type="text" id="f1" name="f1" placeholder="Escreva aqui" size="17">
+            <br><br>
+            <hr>
+            <label for="area"><b>Que strain de Edibles lhe provocou mais interesse?</b></label><br><br>
+            <input type="radio" name="area" value="certo">
+            <label for="q2">OG Kush</label><br>
+            <input type="radio" name="area" value="errado">
+            <label for="q2">Amnesia Haze</label><br>
+            <input type="radio" name="area" value="errado">
+            <label for for="q2">Pineapple Express</label>
+            <br><br>
+            <hr>
+            <label for="pop"><b>Concorda com esta iniciativa?</b></label><br><br>
+            <input type="checkbox" name="pop" value="errado">
+            <label for="q3">Sim</label><br>
+            <input type="checkbox" name="pop" value="certo">
+            <label for="q3">Não</label>
+            <br><br>
+            <hr>
+            <label for="quizzScore"><b>De 0 a 10 quanto gostaria de provar os nossos produtos?</b></label><br><br>
+            <input type="range" id="quizzScore" name="quizzScore" min="0" max="10"
+                   oninput="this.nextElementSibling.value = this.value">
+            <output>0</output>
+            <br><br>
+            <hr>
+            <label for="q1"></label><b>O que mudaria neste website?</b></label>
+            <br><br>
+            <input type="text" id="f1" name="f1" placeholder="Escreva aqui" size="17">
+            <br><br>
+            <hr>
+            <label for="q1"></label><b>Outras sugetões?</b></label>
+            <br><br>
+            <input type="text" id="f1" name="f1" placeholder="Escreva aqui" size="17">
+            <br><br>
+            <button type="submit">Submit! ☑️</button>
+            <br><br>
+            <button type="reset"> Reset! ❌</button>
+            <br><br>
+        </fieldset>
+    </form>
+{% endblock %}
