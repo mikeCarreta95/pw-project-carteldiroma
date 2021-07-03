@@ -13,5 +13,6 @@ urlpatterns = [
     path('coments', views.coments_page_view, name='coments'),
     path('login', views.login_page_view, name='login'),
     path('logout', views.logout_page_view, name='logout'),
+    path('formulario', views.formulario_page_view, name='formulario'),
     path('websiteStuff', views.websiteStuff_page_view, name='websitestuff')
 ]

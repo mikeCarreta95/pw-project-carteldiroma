@@ -2,9 +2,11 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
+
 # Create your views here.
 from django.urls import reverse
-
+from .models import User
+from .forms import UserForm
 
 def home_page_view(request):
     return render(request, 'website/index.html')
@@ -30,6 +32,16 @@ def coments_page_view(request):
     return render(request, 'website/coments.html')
 
 
+def formulario_page_view(request):
+    form = UserForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('website:home'))
+
+    context = {'form': form}
+    return render(request, 'website/formulario.html', context)
+
+
 def login_page_view(request):
     if request.method == "POST":
         username = request.POST['username']
@@ -46,6 +58,7 @@ def login_page_view(request):
                 'message': "Invalid credentials, please try again! :)"
             })
     return render(request, "website/login.html")
+
 
 
 def logout_page_view(request):
