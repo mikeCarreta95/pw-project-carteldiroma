@@ -247,31 +247,43 @@ header > .container {
     color: #c69963;
 }
 
-
-/* FORMULARIO */
-/*
-.formulario .btn{
-    position: relative;
-    left: 30%;
-    width: 150px;
-    color: #c69963 !important;
-    transition: background-color 650ms;
+/*  QUIZZ   */
+.box #points{
+    font-family: 'Teko',sans-serif;
+    text-align: right;
+    font-size: 25px;
+    color: #101D2C;
+}
+.box{
+    padding: 40px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: -1px 8px 15px 0px rgba(0,0,0,0.5);
 }
 
-.formulario .btn:hover{
-    color: #fff!important;
-    background-color: #c69963;
+.box h1{
+    font-family: 'Niconne', cursive;
+    font-size: 60px;
+    color: #c69963;
 }
 
-.formulario p{
-   text-align: left;
-   padding: 20px;
-   margin: 10px;
-   color: #c69963;
-   background-color: #101D2C;
-   border-radius: 3px;
-}*/
+.box p{
 
+    font-size: 22px;
+    font-weight: 500;
+    color: #101D2C;
+}
+.box input{
+    margin-top: 20px;
+}
+
+#button-quizz{
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #c69963;
+}
 
 /*          COMENTS  */
 

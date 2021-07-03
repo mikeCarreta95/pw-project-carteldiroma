@@ -6,3 +6,8 @@ class User(models.Model):
 
     def __str__(self):
         return self.nome
+
+
+class Coments(models.Model):
+    texto = models.CharField(max_length=900)
+
